@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Sen", sans-serif;
+  color: black;
+  font-size: 13px;
+}
+
+body {
+  background-color: #d0ebe4;
+}
+
+h2 {
+  font-size: 26px;
+  font-family: "Sen", sans-serif;
+}
+
+input {
+  display: block;
+  padding: 3px 5px;
+  width: 70%;
+  margin-bottom: 10px;
+  border: 1px gray solid;
+  border-radius: 2px;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+  margin-top: 2px;
+  color: #808080;
+  font-family: "Mulish", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.login-container {
+  width: 50%;
+  height: 48%;
+  position: absolute;
+  background-color: white;
+  margin: 0 auto;
+  top: 20%;
+  left: 25%;
+  border-radius: 10px;
+}
+
+.login-form-container {
+  position: absolute;
+  top: 30%;
+  left: 11%;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.confirm-btn {
+  padding: 5px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #6BCBB8;
+  color: white;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.confirm-btn:hover {
+  cursor: pointer;
+  background-color: #54b5a1;
+}
+
+#login-illustration {
+  height: 380px;
+  position: absolute;
+  right: 10%;
+}
+/*# sourceMappingURL=login-styles.css.map */

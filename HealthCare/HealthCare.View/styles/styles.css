@@ -1,0 +1,50 @@
+.mini-card {
+  background-color: var(--color-white);
+  padding: 1.4rem 2.8rem;
+  border-radius: 30px;
+  height: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mini-card i {
+  color: var(--text-color);
+  font-size: 28px;
+  margin-top: 13px;
+}
+
+.light-green-bcg {
+  background-color: var(--color-primary-medium-light);
+}
+
+.mini-card-title {
+  color: var(--text-color);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.sidebar__nav--item {
+  background-color: var(--color-primary);
+}
+
+.sidebar__nav--item span, .sidebar__nav--item i {
+  color: var(--color-white);
+}
+
+.selected {
+  color: var(--text-color);
+  z-index: 1;
+}
+
+.selected-bcg {
+  color: var(--color-grey-light);
+}
+/*# sourceMappingURL=styles.css.map */

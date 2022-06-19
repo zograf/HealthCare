@@ -1,0 +1,90 @@
+$title-font: 'Sen', sans-serif;
+$plain-font: 'Mulish', sans-serif;
+$font: 'Sen', sans-serif;
+$text-color: black;
+$gray: #808080;
+$ligther-blue: #a5dcd2;
+$blue: #6BCBB8;
+$darker-blue: #54b5a1;
+$navy: #1e265b;
+$bcg-color: #d0ebe4; 
+
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: $font;
+    color: $text-color;
+    font-size: 13px;
+}
+
+body {
+    background-color: $bcg-color;
+}
+
+h2 {
+    font-size: 26px;
+    font-family: $title-font;
+}
+
+input {
+    display: block;
+    padding: 3px 5px;
+    width: 70%;
+    margin-bottom: 10px;
+    border: 1px gray solid;
+    border-radius: 2px;
+}
+
+.subtitle {
+    margin-bottom: 20px;
+    margin-top: 2px;
+    color: $gray;
+    font-family: $plain-font;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.login-container {
+    width: 50%;
+    height: 48%;
+    position: absolute;
+    background-color: white;
+    margin: 0 auto;
+    top: 20%;
+    left: 25%;
+    border-radius: 10px;
+}
+
+.login-form-container {
+    position: absolute;
+    top: 30%;
+    left: 11%;
+    width: 50%;
+    margin: 0 auto;
+    
+}
+
+.confirm-btn {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: $blue;
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $darker-blue;
+    }
+}
+
+#login-illustration {
+    height: 380px;
+    position: absolute;
+    right: 10%;
+}
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <link rel="icon" href="../icon.png"> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/appointmentsDoctor.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700&family=Sen:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <title>Appoitments</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+          <div class="header__date">
+            <p class="header__date--day" id="date">Friday,13th March</p>
+            <p class="header__date--time" id="clock">22:30 PM</p>
+            <p class="header__date--year" id="year">2022.</p>
+          </div>
+          <nav class="user-nav">
+            <div class="user-nav__box">
+              <img
+                src="../img/profile_pic.png"
+                alt="profile picture"
+                class="user-nav__box--img"
+              />
+              <div class="user-nav__box--text">
+                <span class="user-nav__box--text-name" id="smallName">John Doe</span>
+                <span class="user-nav__box--text-status">doctor</span>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <aside class="sidebar">
+          <a href="index.html" class="sidebar__brand--link">
+            <img src="../img/logo_white.svg" alt="brand logo" class="brand-logo" />
+            <h1 class="sidebar__brand--name">Health Care</h1>
+          </a>
+  
+          <nav class="sidebar__nav">
+            <ul class="sidebar__nav--list">
+              <li class="sidebar__nav--item">
+                <a href="doctor-homepage.html" class="sidebar__nav--item-link">
+                  <i class="fa-solid fa-border-all"></i>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li class="sidebar__nav--item">
+                <a href="doctor-appointments.html" class="sidebar__nav--item-link">
+                  <i class="fa-solid fa-calendar-plus"></i>
+                  <span>Schedule</span>
+                </a>
+              </li>
+              <li class="sidebar__nav--item">
+                <a href="#" class="sidebar__nav--item-link">
+                  <i class="fa-solid fa-medkit"></i>
+                  <span>Drugs</span>
+                </a>
+              </li>
+              <li class="sidebar__nav--item sidebar-icon-down">
+                <a href="#" class="sidebar__nav--item-link">
+                  <i class="fa-solid fa-gear"></i>
+                  <span>Settings</span>
+                </a>
+              </li>
+              <li class="sidebar__nav--item">
+                <a href="#" class="sidebar__nav--item-link">
+                  <i class="fa-solid fa-circle-question"></i>
+                  <span>Help</span>
+                </a>
+              </li>
+          </nav>
+        </aside>
+        <div class="welcome-message-box">
+          <h1 class="welcome-message">Here's your schedule, <span id="welcome-name">John!</span></h1>
+        </div>
+        <div class="appointment-box">
+          <div class="appointment-header">
+            <h4>Review all appointments <i class="fa-solid fa-calendar-plus"></i></h4>
+          </div>
+          <div class="examination-select" id="examination-select">
+            
+          </div>
+        </div>
+        <div class="free-days-box">
+          <div class="free-days-header">
+            <h4>Need some time off? Request free days:</h4>
+          </div>
+          <div class="free-days">
+            <label for="from-date">from: </label>
+            <input type="date" id="from-date"/>
+            <label for="to-date" id="to-label">to: </label>
+            <input type="date" id="to-date"/>
+            <input type="checkbox" id="urgent">
+            <label for="urgent" id="urgent-label">urgent</label>
+            <br>
+            <label for="reason" id="reason-label">reason:</label>
+            <input type="text" id="reason">
+            <br>
+            <button type="submit" id="request-btn" class="startBtn" onclick="requestFreeDays()">Submit</button>
+          </div>
+          
+        </div>
+        <div class="appointment-box" id="requests-box">
+          <div class="free-days-header">
+            <h4>Your past and current requests:</h4>
+          </div>
+          <div class="examination-select" id="request-select">
+            
+          </div>
+        </div>
+      </div>
+    <script src="../scripts/doctor-appointments.js"></script>
+    <script src="../scripts/doctor-daysoffrequests.js"></script>
+</body>
+
+</html>

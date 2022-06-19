@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <link rel="icon" href="../icon.png"> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/patient-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700&family=Sen:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <title>Homepage</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+          <div class="header__date">
+            <p class="header__date--day" id="date">Friday,13th March</p>
+            <p class="header__date--time" id="clock">22:30 PM</p>
+            <p class="header__date--year" id="year">2022.</p>
+          </div>
+          <nav class="user-nav">
+            <div class="user-nav__box">
+              <img
+                src="../img/profile_pic.png"
+                alt="profile picture"
+                class="user-nav__box--img"
+              />
+              <div class="user-nav__box--text">
+                <span class="user-nav__box--text-name" id="smallName">John Doe</span>
+                <span class="user-nav__box--text-status">doctor</span>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <aside class="sidebar">
+          <a href="index.html" class="sidebar__brand--link">
+            <img src="../img/logo_white.svg" alt="brand logo" class="brand-logo" />
+            <h1 class="sidebar__brand--name">Health Care</h1>
+          </a>
+  
+          <nav class="sidebar__nav">
+            <ul class="sidebar__nav--list">
+              <li class="sidebar__nav--item">
+                <a href="#" class="sidebar__nav--item-link">
+                  <i class="fa-solid fa-border-all"></i>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <li class="sidebar__nav--item">
+                <a href="doctor-appointments.html" class="sidebar__nav--item-link">
+                  <i class="fa-solid fa-calendar-plus"></i>
+                  <span>Schedule</span>
+                </a>
+              </li>
+              <li class="sidebar__nav--item">
+                <a href="#" class="sidebar__nav--item-link">
+                  <i class="fa-solid fa-medkit"></i>
+                  <span>Drugs</span>
+                </a>
+              </li>
+              <li class="sidebar__nav--item sidebar-icon-down">
+                <a href="#" class="sidebar__nav--item-link">
+                  <i class="fa-solid fa-gear"></i>
+                  <span>Settings</span>
+                </a>
+              </li>
+              <li class="sidebar__nav--item">
+                <a href="#" class="sidebar__nav--item-link">
+                  <i class="fa-solid fa-circle-question"></i>
+                  <span>Help</span>
+                </a>
+              </li>
+          </nav>
+        </aside>
+        <div class="welcome-message-box">
+          <img src="../img/wave_emoji.svg" alt="emoji" class="wave_emoji" />
+          <h1 class="welcome-message">Welcome back, <span id="welcome-name">John!</span></h1>
+        </div>
+        <div class="user-card">
+          <div class="user-card__bio">
+            <img
+              src="../img/profile_pic.png"
+              alt="user profile photo"
+              class="user-card__img"
+            />
+            <div class="user-card__bio--name">
+              <span class="name" id="bigName">John Doe</span>
+              <span class="status">doctor</span>
+            </div>
+          </div>
+          <div class="user-card__basic-info">
+            <div class="user-card__basic-info--personal">
+              <h1 class="heading">Basic Info</h1>
+              <div class="id-birth">
+                <p class="userid">ID: <span id="userId">76890</span></p>
+                <p class="birth">Date of birth: <span id="dateOfBirth">14/06/2022</span></p>
+              </div>
+              <div class="mail-phone">
+                <div class="mail">
+                  <i class="fa-solid fa-envelope"></i>
+                  <span id="mail">johndoe@gmail.com</span>
+                </div>
+                <div class="phone">
+                  <i class="fa-solid fa-square-phone"></i>
+                  <span id="phone">+001 256 36589</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="user-card__risks">
+            <div class="user-card__risks--wrap">
+              <h1 class="heading">Specialization</h1>
+            </div>
+            <div class="potential-risk">
+              <p class="risk" id="specialization">Depression</p>
+            </div>
+          </div>
+        </div>
+        <div class="mini-cards">
+          <div class="mini-card">
+            <h1 class="mini-card-title black">Total</h1>
+            <h1 class="mini-card-title black">Examinations</h1>
+            <p class="examination-number" id="examination-number">67</p>
+            <i class="fa-solid fa-stethoscope"></i>
+          </div>
+          <div class="mini-card light-green-bcg">
+            <h1 class="mini-card-title black">Total</h1>
+            <h1 class="mini-card-title black">Surgeries</h1>
+            <p class="examination-number" id="operation-number">67</p>
+            <i class="fa-solid fa-medkit"></i>
+          </div>
+          <!-- <div class="examinations-card">
+            
+          </div>
+          <div class="surgeries-card">
+            
+          </div> -->
+        </div>
+      </div>
+    <script src="../scripts/doctor-hp.js"></script>
+</body>
+
+</html>

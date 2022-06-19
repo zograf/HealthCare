@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/patient-recommended.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700&family=Sen:wght@400;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+
+  <title>Health Care &mdash; Care you deserve</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header__date">
+        <p class="header__date--day" id="date">Friday,13th March</p>
+        <p class="header__date--time" id="clock">22:30 PM</p>
+        <p class="header__date--year" id="year">2022.</p>
+      </div>
+      <nav class="user-nav">
+        <div class="user-nav__box">
+          <img src="../img/profile_pic.png" alt="profile picture" class="user-nav__box--img" />
+          <div class="user-nav__box--text">
+            <span class="user-nav__box--text-name" id="smallName">John Doe</span>
+            <span class="user-nav__box--text-status">patient</span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <aside class="sidebar">
+      <a href="patient-homepage.html" class="sidebar__brand--link">
+        <img src="../img/logo_white.svg" alt="brand logo" class="brand-logo" />
+        <h1 class="sidebar__brand--name">Health Care</h1>
+      </a>
+
+      <nav class="sidebar__nav">
+        <ul class="sidebar__nav--list">
+          <li class="sidebar__nav--item">
+            <a href="patient-homepage.html" class="sidebar__nav--item-link">
+              <i class="fa-solid fa-border-all"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="sidebar__nav--item">
+            <a href="patient-appointment.html" class="sidebar__nav--item-link">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span>Appoitments</span>
+            </a>
+          </li>
+          <li class="sidebar__nav--item">
+            <a href="patient-recommended.html" class="sidebar__nav--item-link">
+              <i class="fa-solid fa-clock"></i>
+              <span>Recommended</span>
+            </a>
+          </li>
+          <li class="sidebar__nav--item">
+            <a href="#" class="sidebar__nav--item-link">
+              <i class="fa-solid fa-clipboard-user"></i>
+              <span>Medical record</span>
+            </a>
+          </li>
+          <li class="sidebar__nav--item">
+            <a href="patient-doctor_search.html" class="sidebar__nav--item-link">
+              <i class="fa-solid fa-user-doctor"></i>
+              <span>Doctors</span>
+            </a>
+          </li>
+          <li class="sidebar__nav--item">
+            <a href="#" class="sidebar__nav--item-link">
+              <i class="fa-solid fa-capsules"></i>
+              <span>My therapy</span>
+            </a>
+          </li>
+          <li class="sidebar__nav--item sidebar-icon-down">
+            <a href="#" class="sidebar__nav--item-link">
+              <i class="fa-solid fa-gear"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li class="sidebar__nav--item">
+            <a href="#" class="sidebar__nav--item-link">
+              <i class="fa-solid fa-circle-question"></i>
+              <span>Help</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="main-div">
+      <div class="info-message-box">
+        <h4>
+          We got your back!
+        </h4>
+        <p>Here are some recommended dates that are open</p>
+      </div>
+      <div class="params-picker">
+        <div class="time-doctor-picker">
+          <p>I have to be examined by: </p>
+          <select name="doctor-names" id="doctor-names" class="doctor-names">
+            
+          </select>
+          <p>from</p>
+          <div class="time-picker">
+            <select name="hourSelect1" id="hourSelect1" class="time-picker__select"></select>
+            :
+            <select name="minuteSelect1" id="minuteSelect1" class="time-picker__select"></select>
+          </div>
+          <p>to</p>
+          <div class="time-picker">
+            <select name="hourSelect2" id="hourSelect2" class="time-picker__select"></select>
+            :
+            <select name="minuteSelect2" id="minuteSelect2" class="time-picker__select"></select>
+          </div>
+          
+        </div>
+        <div class="date-picker">
+          <p>I have to be examined until: </p>
+          <input type="date" name="date-until" id="date-until" class="date-until">
+        </div>
+        <div class="priority-picker">
+          <p>Choose your priority: </p>
+          <input type="radio" name="priority" class="radio-priority" value="doctor" checked>Doctor<br>
+          <input type="radio" name="priority" class="radio-priority" value="date">Date<br>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="submitBtn" id="submitBtn">Submit</button>
+      </div>
+      <div class="appointment-box">
+        <div class="appointment-header">
+          <h4>Here are what we found <i class="fa-solid fa-calendar-plus"></i></h4>
+        </div>
+        <div class="examination-select" id="examination-select">
+          
+        </div>
+      </div>
+    </div>
+    <script src="../scripts/scripts.js"></script>
+    <script src="../scripts/patient-recommended.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/patient-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700&family=Sen:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+
+    <title>Health Care &mdash; Care you deserve</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <header class="header">
+        <div class="header__date">
+          <p class="header__date--day" id="date">Friday,13th March</p>
+          <p class="header__date--time" id="clock">22:30 PM</p>
+          <p class="header__date--year" id="year">2022.</p>
+        </div>
+        <nav class="user-nav">
+          <div class="user-nav__box">
+            <img
+              src="../img/profile_pic.png"
+              alt="profile picture"
+              class="user-nav__box--img"
+            />
+            <div class="user-nav__box--text">
+              <span class="user-nav__box--text-name" id="smallName">John Doe</span>
+              <span class="user-nav__box--text-status">patient</span>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <aside class="sidebar">
+        <a href="index.html" class="sidebar__brand--link">
+          <img src="../img/logo_white.svg" alt="brand logo" class="brand-logo" />
+          <h1 class="sidebar__brand--name">Health Care</h1>
+        </a>
+
+        <nav class="sidebar__nav">
+          <ul class="sidebar__nav--list">
+            <li class="sidebar__nav--item">
+              <a href="#" class="sidebar__nav--item-link">
+                <i class="fa-solid fa-border-all"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li class="sidebar__nav--item">
+              <a href="patient-appointment.html" class="sidebar__nav--item-link">
+                <i class="fa-solid fa-calendar-plus"></i>
+                <span>Appoitments</span>
+              </a>
+            </li>
+            <li class="sidebar__nav--item">
+              <a href="patient-recommended.html" class="sidebar__nav--item-link">
+                <i class="fa-solid fa-clock"></i>
+                <span>Recommended</span>
+              </a>
+            </li>
+            <li class="sidebar__nav--item">
+              <a href="#" class="sidebar__nav--item-link">
+                <i class="fa-solid fa-clipboard-user"></i>
+                <span>Medical record</span>
+              </a>
+            </li>
+            <li class="sidebar__nav--item">
+              <a href="patient-doctor_search.html" class="sidebar__nav--item-link">
+                <i class="fa-solid fa-user-doctor"></i>
+                <span>Doctors</span>
+              </a>
+            </li>
+            <li class="sidebar__nav--item">
+              <a href="#" class="sidebar__nav--item-link">
+                <i class="fa-solid fa-capsules"></i>
+                <span>My therapy</span>
+              </a>
+            </li>
+            <li class="sidebar__nav--item sidebar-icon-down">
+              <a href="#" class="sidebar__nav--item-link">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+              </a>
+            </li>
+            <li class="sidebar__nav--item">
+              <a href="#" class="sidebar__nav--item-link">
+                <i class="fa-solid fa-circle-question"></i>
+                <span>Help</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="welcome-message-box">
+        <img src="../img/wave_emoji.svg" alt="emoji" class="wave_emoji" />
+        <h1 class="welcome-message">Welcome back, <span id="welcome-name">John !</span></h1>
+      </div>
+      <div class="user-card">
+        <div class="user-card__bio">
+          <img
+            src="../img/profile_pic.png"
+            alt="user profile photo"
+            class="user-card__img"
+          />
+          <div class="user-card__bio--name">
+            <span class="name" id="bigName">John Doe</span>
+            <span class="status">pacient</span>
+          </div>
+        </div>
+        <div class="user-card__basic-info">
+          <div class="user-card__basic-info--personal">
+            <h1 class="heading">Basic Info</h1>
+            <div class="id-birth">
+              <p class="userid">ID: <span id="userId">76890</span></p>
+              <p class="birth">Date of birth: <span id="dateOfBirth">14/06/2022</span></p>
+            </div>
+            <div class="mail-phone">
+              <div class="mail">
+                <i class="fa-solid fa-envelope"></i>
+                <span id="mail">johndoe@gmail.com</span>
+              </div>
+              <div class="phone">
+                <i class="fa-solid fa-square-phone"></i>
+                <span id="phone">+001 256 36589</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="user-card__risks">
+          <div class="user-card__risks--wrap">
+            <h1 class="heading">Potential risks</h1>
+          </div>
+          <div class="potential-risk">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p class="risk">Depression</p>
+          </div>
+        </div>
+        <div class="user-card__allergies">
+          <div class="user-card__risks--wrap-2">
+            <h1 class="heading">Allergies</h1>
+          </div>
+          <div class="allergy">
+            <i class="fa-solid fa-shrimp"></i>
+            <span>Shell fish</span>
+          </div>
+          <div class="allergy-2">
+            <i class="fa-solid fa-syringe"></i>
+            <span>Peniciline</span>
+          </div>
+          <div class="allergy-3">
+            <i class="fa-solid fa-tree"></i>
+            <span>Tree nuts</span>
+          </div>
+        </div>
+      </div>
+      <div class="mini-cards">
+        <div class="height-card">
+          <h1 class="height-text">Height</h1>
+          <p class="height-number"><span id="height">186</span>cm</p>
+          <i class="fa-solid fa-ruler-vertical"></i>
+        </div>
+        <div class="weight-card">
+          <h1 class="weight-text">Weight</h1>
+          <p class="weight-number"><span id="weight">86</span>kg</p>
+          <i class="fa-solid fa-weight-scale"></i>
+        </div>
+        <div class="examinations-card">
+          <h1 class="examination-text">Total</h1>
+          <h1 class="examination-text">Examinations</h1>
+          <p class="examination-number" id="examination-number">67</p>
+          <i class="fa-solid fa-stethoscope"></i>
+        </div>
+        <div class="surgeries-card">
+          <h1 class="surgeries-text">All surgeries</h1>
+          <div class="surgery-1">
+            <i class="fa-solid fa-brain"></i>
+            <p class="surgery-text">Brain</p>
+          </div>
+          <div class="surgery-2">
+            <i class="fa-solid fa-lungs"></i>
+            <p class="surgery-text">Lungs</p>
+          </div>
+          <div class="surgery-3">
+            <i class="fa-solid fa-bone"></i>
+            <p class="surgery-text">Leg bone</p>
+          </div>
+        </div>
+      </div>
+      <div class="rate-hospital">
+        <button class="js-close" id="rate-hospital-btn">Rate hospital</button>
+      </div>
+      
+      <div class="news-text">
+        <h1 class="heading-news">Latest News</h1>
+      </div>
+      <div class="news-1">
+        <div class="image__box"></div>
+        <div class="news-content">
+          <div class="logo">
+            <p class="logo__name">Health Care</p>
+          </div>
+          <div class="content-wrapper">
+            <h1 class="heading-news">
+              Surgeons successfully performed the first heart transplant !
+            </h1>
+            <p class="paragraph-news">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
+              laborum, blanditiis inventore repellat, beatae natus amet culpa
+              ratione recusandae velit placeat officia modi iure cum sunt,
+              facere ipsa qui facilis.
+            </p>
+            <span>Read more...</span>
+          </div>
+        </div>
+      </div>
+      <div class="news-2">
+        <div class="image__box--2"></div>
+        <div class="news-content">
+          <div class="logo">
+            <p class="logo__name">Health Care</p>
+          </div>
+          <div class="content-wrapper">
+            <h1 class="heading-news--2">A few words, Dr. Smith</h1>
+            <p class="paragraph-news--2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
+              laborum, blanditiis inventore repellat, beatae natus amet culpa
+              ratione recusandae velit placeat officia modi iure cum sunt,
+              facere ipsa qui facilis.
+            </p>
+            <span>Read more...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal js-modal" id="modalQuestion">
+      <h1 id="modal-title">Rate hospital</h1>
+      <p>To dismiss click the button below</p>
+      <div class="questions">
+        <div class="question">
+          <p>How would you rate the quality of service in our hospital?</p>
+          <input type="radio" name="question1" class="radio-priority" value=5 checked>5
+          <input type="radio" name="question1" class="radio-priority" value=4>4
+          <input type="radio" name="question1" class="radio-priority" value=3>3
+          <input type="radio" name="question1" class="radio-priority" value=2>2
+          <input type="radio" name="question1" class="radio-priority" value=1>1
+          <br>
+          <input type="text" class="form-control" id="text1">
+        </div>
+        <div class="question">
+          <p>How would you rate the hygiene of service in our hospital?</p>
+          <input type="radio" name="question2" class="radio-priority" value=5 checked>5
+          <input type="radio" name="question2" class="radio-priority" value=4>4
+          <input type="radio" name="question2" class="radio-priority" value=3>3
+          <input type="radio" name="question2" class="radio-priority" value=2>2
+          <input type="radio" name="question2" class="radio-priority" value=1>1
+          <br>
+          <input type="text" class="form-control" id="text2">
+        </div>
+        <div class="question">
+          <p>Were you satisfied and would you recommend our hospital to your friends?</p>
+          <input type="radio" name="question3" class="radio-priority" value=5 checked>5
+          <input type="radio" name="question3" class="radio-priority" value=4>4
+          <input type="radio" name="question3" class="radio-priority" value=3>3
+          <input type="radio" name="question3" class="radio-priority" value=2>2
+          <input type="radio" name="question3" class="radio-priority" value=1>1
+          <br>
+          <input type="text" class="form-control" id="text3">
+        </div>
+        <div class="question">
+          <p>Do you have any comments about our hospital?</p>
+          <input type="radio" name="question4" class="radio-priority" value=5 checked>5
+          <input type="radio" name="question4" class="radio-priority" value=4>4
+          <input type="radio" name="question4" class="radio-priority" value=3>3
+          <input type="radio" name="question4" class="radio-priority" value=2>2
+          <input type="radio" name="question4" class="radio-priority" value=1>1
+          <br>
+          <input type="text" class="form-control" id="text4">
+        </div>
+      </div>
+      <button class="js-close" id="submit-btn-question">Submit</button>
+      <button class="js-close" id="close-btn-question">Dismiss</button>
+    </div>
+    <script src="../scripts/scripts.js"></script>
+    <script src="../scripts/patient-homepage.js"></script>
+  </body>
+</html>

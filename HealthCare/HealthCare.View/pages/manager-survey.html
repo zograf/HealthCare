@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/manager-survey-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700&family=Sen:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+
+    <title>Health Care &mdash; Care you deserve</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__date">
+          <p class="header__date--day" id="date">Friday,13th March</p>
+          <p class="header__date--time" id="clock">22:30 PM</p>
+          <p class="header__date--year" id="year">2022.</p>
+        </div>
+        <nav class="user-nav">
+          <div class="user-nav__box">
+            <img
+              src="../img/profile_pic.png"
+              alt="profile picture"
+              class="user-nav__box--img"
+            />
+            <div class="user-nav__box--text">
+              <span class="user-nav__box--text-name" id="smallName">John Doe</span>
+              <span class="user-nav__box--text-status">manager</span>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <aside class="sidebar">
+        <a href="index.html" class="sidebar__brand--link">
+          <img src="../img/logo_white.svg" alt="brand logo" class="brand-logo" />
+          <h1 class="sidebar__brand--name">Health Care</h1>
+        </a>
+
+        <nav class="sidebar__nav">
+          <ul class="sidebar__nav--list">
+              <li class="sidebar__nav--item">
+                  <a href="manager-homepage.html" class="sidebar__nav--item-link">
+                      <i class="fa-solid fa-border-all"></i>
+                      <span>Dashboard</span>
+                  </a>
+              </li>
+            <li class="sidebar__nav--item">
+              <a href="#" class="sidebar__nav--item-link">
+                <i class="fa-solid fa-border-all"></i>
+                <span>Survey</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="survey-div">
+          <h1>Hospital Survey</h1>
+          <div id="hospital-table"></div>
+          <h1>All Doctors</h1>
+          <div id="all-doctors-table"></div>
+          <form action="">
+              <label>ID:</label>
+              <input type="text" id="doctor-id">
+              <button id="find">Find doctor</button>
+          </form>
+          <h1>Doctor Survey</h1>
+          <div id="doctor-table"></div>
+          <h1>Top Rated Doctors</h1>
+          <div id="top-rated-table"></div>
+          <h1>Worst Rated Doctors</h1>
+          <div id="worst-rated-table"></div>
+      </div>
+    </div>
+    <script src="../scripts/scripts.js"></script>
+    <script src="../scripts/manager-survey.js"></script>
+  </body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/patient-doctor_search.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700&family=Sen:wght@400;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+
+  <title>Health Care &mdash; Care you deserve</title>
+</head>
+
+<body>
+  <div class="container" id="container">
+    <header class="header">
+      <div class="header__date">
+        <p class="header__date--day" id="date">Friday,13th March</p>
+        <p class="header__date--time" id="clock">22:30 PM</p>
+        <p class="header__date--year" id="year">2022.</p>
+      </div>
+      <nav class="user-nav">
+        <div class="user-nav__box">
+          <img src="../img/profile_pic.png" alt="profile picture" class="user-nav__box--img" />
+          <div class="user-nav__box--text">
+            <span class="user-nav__box--text-name" id="smallName">John Doe</span>
+            <span class="user-nav__box--text-status">patient</span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <aside class="sidebar">
+      <a href="patient-homepage.html" class="sidebar__brand--link">
+        <img src="../img/logo_white.svg" alt="brand logo" class="brand-logo" />
+        <h1 class="sidebar__brand--name">Health Care</h1>
+      </a>
+
+      <nav class="sidebar__nav">
+        <ul class="sidebar__nav--list">
+          <li class="sidebar__nav--item">
+            <a href="patient-homepage.html" class="sidebar__nav--item-link">
+              <i class="fa-solid fa-border-all"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="sidebar__nav--item">
+            <a href="patient-appointment.html" class="sidebar__nav--item-link">
+              <i class="fa-solid fa-calendar-plus"></i>
+              <span>Appoitments</span>
+            </a>
+          </li>
+          <li class="sidebar__nav--item">
+            <a href="patient-recommended.html" class="sidebar__nav--item-link">
+              <i class="fa-solid fa-clock"></i>
+              <span>Recommended</span>
+            </a>
+          </li>
+          <li class="sidebar__nav--item">
+            <a href="#" class="sidebar__nav--item-link">
+              <i class="fa-solid fa-clipboard-user"></i>
+              <span>Medical record</span>
+            </a>
+          </li>
+          <li class="sidebar__nav--item">
+            <a href="patient-doctor_search.html" class="sidebar__nav--item-link">
+              <i class="fa-solid fa-user-doctor"></i>
+              <span>Doctors</span>
+            </a>
+          </li>
+          <li class="sidebar__nav--item">
+            <a href="#" class="sidebar__nav--item-link">
+              <i class="fa-solid fa-capsules"></i>
+              <span>My therapy</span>
+            </a>
+          </li>
+          <li class="sidebar__nav--item sidebar-icon-down">
+            <a href="#" class="sidebar__nav--item-link">
+              <i class="fa-solid fa-gear"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li class="sidebar__nav--item">
+            <a href="#" class="sidebar__nav--item-link">
+              <i class="fa-solid fa-circle-question"></i>
+              <span>Help</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="main-div">
+      <div class="info-message-box">
+        <h4>
+          Let's take a closer look on our doctors
+        </h4>
+        <p>Here are list of all of them</p>
+      </div>
+      <div class="params-picker">
+        <div class="doctor-params-div">
+          <p>Name: </p>
+          <input type="text" class="form-control" id="name-search">
+          <p>Surname: </p>
+          <input type="text" class="form-control" id="surname-search">
+          <p>Specialization: </p>
+          <input type="text" class="form-control" id="specialization-search">
+        </div>
+        <div class="doctor-params-div">
+          <p>Sort by: </p>
+          <select name="sort-params" id="sort-params" class="doctor-params">Select criteria
+            <option id="name" value="name">Name</option>
+            <option id="name" value="surname">Surname</option>
+            <option id="name" value="specialization">Specialization</option>
+            <option id="name" value="rating">Rating</option>
+          </select>
+        </div>
+        <button id="search-btn" class="search-btn">Search</button>
+      </div>
+      <div class="doctor-select" id="doctor-select"></div>
+
+    </div>
+    
+  </div>
+  <div class="modal js-modal" id="modal">
+    <div class="modal-image">
+      <svg viewBox="0 0 32 32" style="fill:#48DB71">
+        <path d="M1 14 L5 10 L13 18 L27 4 L31 8 L13 26 z"></path>
+      </svg>
+    </div>
+    <h1 id="modal-title">Nice job!</h1>
+    <p>To dismiss click the button below</p>
+    <div class="date-time">
+      <div class="date-picker">
+        <div>
+          <select name="yearSelect" id="yearSelect" class="year"></select>
+        </div>
+        
+        <div>
+          <select name="monthSelect" id="monthSelect" class="month"></select>
+        </div>
+
+        <div>
+          <select name="daySelect" id="daySelect" class="day"></select>
+        </div>
+        
+      </div>
+      <div class="time-picker">
+        <select name="hourSelect" id="hourSelect" class="time-picker__select"></select>
+        :
+        <select name="minuteSelect" id="minuteSelect" class="time-picker__select"></select>
+      </div>
+    </div>
+    <button class="js-close" id="submit-btn">Submit</button>
+    <button class="js-close" id="close-btn">Dismiss</button>
+  </div>
+  <script src="../scripts/scripts.js"></script>
+  <script src="../scripts/patient-doctor_search.js"></script>
+</body>
+
+</html>
